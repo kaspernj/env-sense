@@ -1,0 +1,27 @@
+{
+  "name": "env-sense",
+  "version": "1.0.0",
+  "description": "Detect environment (native, server side, web, etc.)",
+  "keywords": [
+    "detect",
+    "environment",
+    "server-side",
+    "native",
+    "web"
+  ],
+  "homepage": "https://github.com/kaspernj/env-sense#readme",
+  "bugs": {
+    "url": "https://github.com/kaspernj/env-sense/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaspernj/env-sense.git"
+  },
+  "license": "ISC",
+  "author": "kasper@diestoeckels.de",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
