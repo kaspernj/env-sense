@@ -2,7 +2,7 @@ import envSense from "./index.js"
 
 const shared = {}
 
-const useEnvironment = function useEnvironment() {
+const useEnvSense = function useEnvSense() {
   if (!shared.result) {
     const result = envSense()
 
@@ -12,4 +12,4 @@ const useEnvironment = function useEnvironment() {
   return shared.result
 }
 
-export default useEnvironment
+export default useEnvSense
