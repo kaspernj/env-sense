@@ -5,9 +5,9 @@ export default function envSense() {
     isServer: false
   }
 
-  if (typeof navigator !== undefined && navigator.product == "ReactNative") {
+  if (typeof navigator !== "undefined" && navigator.product == "ReactNative") {
     result.isNative = true
-  } else if (typeof window !== undefined && window.document?.createElement) {
+  } else if (typeof window !== "undefined" && window.document?.createElement) {
     result.isBrowser = true
   } else {
     result.isServer = true
