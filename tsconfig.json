@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": ["dom", "ES2020"],
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
+    "outDir": "build",
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "target": "ES2020"
+  },
+  "include": ["src/**/*"]
+}

@@ -1,8 +1,12 @@
 import envSense from "./index.js"
 
-const shared = {}
+/** @type {{result: undefined | import("./types.js").EnvSenseResult}} */
+const shared = {
+  result: undefined
+}
 
-const useEnvSense = function useEnvSense() {
+/** @returns {import("./types.js").EnvSenseResult} */
+function useEnvSense() {
   if (!shared.result) {
     const result = envSense()
 
