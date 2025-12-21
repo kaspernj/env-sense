@@ -1,3 +1,4 @@
+/** @returns {import("./types.js").EnvSenseResult} */
 export default function envSense() {
   const result = {
     isBrowser: false,

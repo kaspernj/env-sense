@@ -20,8 +20,18 @@
   "license": "ISC",
   "author": "kasper@diestoeckels.de",
   "type": "module",
-  "main": "src/index.js",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "files": ["build/**"],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf build && npm run compile",
+    "compile": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typecheck": "tsc --noEmit",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   }
 }
