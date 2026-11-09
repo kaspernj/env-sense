@@ -1,0 +1,14 @@
+# Path filter for this project's single build lane: a delivery that changes none
+# of the paths this build consumes is created as `skipped` instead of running.
+# Every uncertain case (missing, empty or capped file list, a change to this file
+# or peak_flow.yml, a manual rebuild) still runs the build.
+paths:
+  - src/**
+  - package.json
+  - package-lock.json
+  - tsconfig.json
+
+before_script:
+  - npm install
+script:
+  - npm run typecheck
